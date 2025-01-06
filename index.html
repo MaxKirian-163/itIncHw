@@ -1,132 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+	 <link rel="stylesheet" href="css/style.css">
+	 <title>It-incubator precourse</title>
 </head>
 <body>
-	<div class="wrapper">
-	<header class="header"> 
-				<a href="" class="logo">
-					<img class="logo" src="img/logo.svg" alt="image">
-				</a>
-		<ul class="menu">
-			<li class="menu-item">
-				<a href="" class="menu-link">Main</a>
-			</li>
-			<li>
-				<a href="" class="menu-link">Rates</a>
-			</li>
-			<li>
-				<a href="" class="menu-link">Create Account</a>
-			</li>
-		</ul>
-	</header>
-	<section>
-		<h1>Markup achievement</h1>
-		<p>The harder you work for something, the greater you'll feel when you achieve it.</p>
-		<button>Learn More</button>
-		<img src="img/2sectionIMG.png" alt="image">
-	</section>
-	<section>
-		<h2>Rates</h2>
-		<p>Failure will never overtake me if my determination to succeed is strong enough.</p>
-		<table>
-			<tr>
-				<th>Features</th>
-				<th>Standart</th>
-				<th>Plus</th>
-				<th>PRO</th>
-			</tr>
-			<tr>
-				<th>Theory</th>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-			</tr>
-			<tr>
-				<th>Practice</th>
-				<td><img src=".assets/images/Close.svg" alt="image"></td>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-			</tr>
-			<tr>
-				<th>Code reviwe</th>
-				<td><img src=".assets/images/Close.svg" alt="image"></td>
-				<td><img src=".assets/images/Close.svg" alt="image"></td>
-				<td><img src=".assets/images/Check.svg" alt="image"></td>
-			</tr>
-			<tr>
-				<th><a href="">Have questions?</a></th>
-				<td><button>get now</button></td>
-				<td><button>get now</button></td>
-				<td><button>get now</button></td>
-			</tr>
-		</table>
-	</section>
-	<section>
-		<h2>Create your free account</h2>
-		<p>Let us first talk about dreams. We all know that dreams do play a role in our dialy lives. The majority of people pay little attention to dreams. Dreams can help us find solutions to uor daily problems and see things from a different perspective. Whenever we are dreaming, we can be who or what we what to be, regardless of the fact that in real life.</p>
-		<ul>
-			 <li>Easy setup, fast start</li>
-			 <li>Free forever for core features</li>
-			 <li>14-day trial of premiu, features</li>
-		</ul>
-		<form action="">
-			<input type="text" placeholder="Full Name"> 
-			<input type="email" placeholder="Email">
-			<input type="password" placeholder="Password">
-			<input type="date">
-		
-			<select>
-			 <option selected disabled>Country</option>
-			 <option>Belarus</option>
-			 <option>China</option>
-			 <option>USA</option>
-			</select>
+    <!-- ЗАДАНИЕ -->
+    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
+    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
-			<label for="front">
-					<input id="front" type="radio" name="stack" checked> 
-					Frontend
-		 	</label>
+<header class="header">
+	<span>IT-INCUBATOR</span>
+</header>
 
-		 	<label for="back">
-					<input id="back" type="radio" name="stack">
-					Backend
-		 	</label>
+   <section data-cy="hw1-section-main-pre">
+        														<!-- 1) В этом разделе создай 3 дочерних элемента: -->
+			<h1>Кирьянов Максим Андреевич</h1>		<!-- a) Заголовок первого уровня со своим ФИО -->
+   		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis eos fuga nobis quidem sint pariatur officia iure ducimus voluptates. Incidunt officia voluptates libero laudantium delectus aliquid, similique sapiente id.</p><!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
+      	<img src="img/img.png" alt="image">		<!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
+   </section>
 
-		 	<fieldset>
-					<legend>Favorite Technologies</legend>
-					<label for="html">
-						<input id="html" type="checkbox" name="html" checked>
-					HTML
-			</label>
-			<label for="css">
-					<input id="css" type="checkbox" name="css" checked>
-					CSS
-			 </label>
-			 <label for="react">
-					<input id="react" type="checkbox" name="react">
-					React
-			 </label>
-			 <label for="sc">
-					<input id="sc" type="checkbox" name="sc">
-					Styled components
-			 </label>
-		 	</fieldset>
+   <section data-cy="hw1-section-about-pre">
+        <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
+        <select>
+				<option selected>Togliatty</option>
+				<option>Belarus</option>
+				<option>Togliatty</option>
+				<option>Mars</option>
+		  </select>
+		  
+		  <div data-cy="hw1-unordered-list-box-pre">
+            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
-		 	<textarea placeholder="Something else about you..."></textarea>
+            <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
+				<h2>Любимые фреймворки</h2>
+				<ul>
+					<li>react</li>
+					<li>vue</li>
+					<li>angular</li>
+			  </ul>
+			</div>
+        <div data-cy="hw1-ordered-list-box-pre">
+            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
-			<input type="submit">
-		</form>
-	</section>
-	<footer>
-		<small>Copyrith @ 2023. All rights reserved</small>
-		<!--<span>Copyrith @ 2023. All rights reserved</span> -->
-	</footer>
-	</div>
+            <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
+				<h2>Рейтинг любимых книг</h2>
+				<ol>
+					<li>HTML5+CSS3. Основы современного web-дизайна</li>
+					<li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
+					<li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
+			  </ol>
+			</div>
+        <div data-cy="hw1-skills-box-pre">
+            <h2>Мои скиллы</h2>
+            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
+                - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
+                - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
+                - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+				
+						<label for="html5">
+								<input id="html5" type="checkbox" name="html5" checked>
+										HTML5
+							</label>
+						<label for="css3">
+								<input id="css3" type="checkbox" name="css3" checked>
+										CSS3
+				 			</label>
+				 		<label for="JavaScript">
+								<input id="JavaScript" type="checkbox" name="JavaScript">
+										JavaScript
+				 			</label>
+				 		<label for="Jquery">
+								<input id="Jquery" type="checkbox" name="Jquery">
+										Jquery
+				 			</label>
+						<label for="React">
+								<input id="React" type="checkbox" name="React">
+										React
+				 			</label>
+			</div>
+        	
+			<input type="text" placeholder="Новый скилл">	<!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+			<button type="button">добавить</button>	<!-- 6) Создай здесь кнопку “Добавить” -->
+	<br>
+		<br>
+			<br>				<!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
+<hr>
+			<br>
+		<br>
+	<br>
+      <table data-cy="hw-about-table-pre" border="1">
+            <!-- 8) В таблице сделай 5 строк и 3 столбца. 
+                        - В первой строке ячейки заголовков, в остальных обычные ячейки
+                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
+                        - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
+								<thead>
+										<tr>
+											<th>п/п</th>
+											<th>Наименование</th>
+											<th>Количество</th>
+										</tr>
+									</thead>
+								<tbody>
+										<tr>
+											<td>1</td>
+											<td>Монитор</td>
+											<td>2</td>	
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Клавиатура</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Мышь</td>
+											<td>1</td>
+										</tr>
+								</tbody>
+								<tfoot>
+										<tr>
+											<td colspan="2">Итого:</td>
+											<td>4</td>
+										</tr>
+								</tfoot>
+								</table>
+		</section>
+    	<footer data-cy="hw-footer-pre">
+        <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+		  <a href="https://it-incubator.io/">it-incubator</a>
+		</footer>
 </body>
 </html>
