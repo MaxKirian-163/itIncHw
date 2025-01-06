@@ -19,6 +19,7 @@ ul,
 ol,
 li {
 	list-style: none;
+	color:red;
 }
 img {
 	vertical-align: top;
